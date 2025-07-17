@@ -6,8 +6,8 @@
 Today’s mission: Become a juice engineer and create a drink just for your customer.
 
 🔍 What you’ll practice:
-- `input()` to ask questions
-- `if/elif/else` to make decisions
+- input() to ask questions
+- if/elif/else to make decisions
 - Creative logic to match mood + flavor to a drink
 
 🧪 Your Job:
@@ -24,7 +24,7 @@ Today’s mission: Become a juice engineer and create a drink just for your cust
 ✅ Show a funny message if someone picks a weird fruit like “pickle”
 
 🧠 Bonus Challenge (for fast coders):
-- Add a surprise drink using `random.choice()`
+- Add a surprise drink using random.choice()
 - Let users build their own drink from 3 ingredients
 - Use a loop to serve multiple customers in a row
 
@@ -48,15 +48,16 @@ fruit = input("🍉 What's your favorite fruit? (mango, strawberry, banana, etc)
 print("\n🧪 Mixing your ingredients...\n")
 
 if age < 10:
-    drink = f"Baby Banana Bash with extra sprinkles 🍌✨"
+    drink = "Baby Banana Bash with extra sprinkles 🍌✨"
 elif sweet == "yes" and mood == "happy":
-    drink = f"Super Strawberry Sunshine with rainbow jelly 🍓🌈"
+    drink = "Super Strawberry Sunshine with rainbow jelly 🍓🌈"
 elif sweet == "no" and mood == "sleepy":
-    drink = f"Calm Coconut Chill – with low sugar 🥥😴"
+    drink = "Calm Coconut Chill – with low sugar 🥥😴"
 elif fruit == "mango":
-    drink = f"Mango Mystery Blast – only for the bold 🥭🔥"
+    drink = "Mango Mystery Blast – only for the bold 🥭🔥"
 elif mood == "lit":
-    drink = f"Electric Energy Elixir – caffeine + sparkle ⚡💥"\else:
+    drink = "Electric Energy Elixir – caffeine + sparkle ⚡💥"
+else:
     drink = f"Classic {fruit.title()} Cooler 🍹"
 
 # Output the result
