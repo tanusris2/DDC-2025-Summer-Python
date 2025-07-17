@@ -16,13 +16,13 @@ print("\n🔒 Generating your secure passport...\n")
 print("=========================================")
 print("          🌐 CODE ISLAND PASSPORT        ")
 print("=========================================")
-print(f"👤 Name: {name}")
-print(f"🆔 Code Name: {code_name}")
-print(f"🎂 Age: {age}")
-print(f"🎨 Favorite Color: {color}")
-print(f"💼 Dream Job: {dream_job}")
-print(f"🌴 Dream Island: {island}")
-print(f"😎 Emoji ID: {emoji}")
+print(f"👤 Name: {Tanusri Saha}")
+print(f"🆔 Code Name: {tamusris2}")
+print(f"🎂 Age: {15}")
+print(f"🎨 Favorite Color: {purple}")
+print(f"💼 Dream Job: {neurologist}")
+print(f"🌴 Dream Island: {fiji}")
+print(f"😎 Emoji ID: {🙉}")
 print("=========================================")
 print("🌟 You're now an official explorer of Code Island! 🌟\n")
 
@@ -44,9 +44,19 @@ game = input("🎮 What's your favorite video game? ")
 
 # Print custom section
 print("===== BONUS INFO =====")
-print(f"🎨 Hobby: {hobby}")
-print(f"🎮 Favorite Game: {game}")
+print(f"🎨 Hobby: {I love to bake}")
+print(f"🎮 Favorite Game: {Roblox}")
 print("======================")
 
 # CHALLENGE: Add at least 2 more sections below!
 # For example: favorite snack, favorite animal, favorite song, etc.
+
+# 👉 Example:
+animal = input("🐾 What's your favorite animal?")
+song = input("🎶 What's your favorite song?")
+
+# Print custom section
+print("===== BONUS INFO =====")
+print(f"🐾 Favorite Animal: {I love elephants}")
+print(f"🎶 Favorite Song: {My favorite song is Hold Me Down}")
+print("======================")
