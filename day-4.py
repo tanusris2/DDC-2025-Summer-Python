@@ -29,6 +29,8 @@ If they ignore it or make bad choices, the pet gets sad or runs away!
 - Show off your best pet survival record
 - Submit your `.py` file or Replit link
 """
+import time 
+import random
 
 # 🐾 Starter Code
 print("🐾 Welcome to the Virtual Pet Game!")
@@ -37,10 +39,18 @@ pet_type = input("What kind of pet is it? (dog, cat, alien, etc): ")
 
 hunger = 5  # 0 is full, 10 is starving
 happiness = 5  # 0 is sad, 10 is super happy
+possible_finds = [
+    "ezra",
+    "a mystery egg",
+    "a ball",
+    "a chewy toy",
+    "a dog toy"
+]
 
 print(f"\nYou adopted a {pet_type} named {name}! Take good care of it.")
 
 # Game loop (runs for 5 turns)
+start_time = time.time()
 for turn in range(5):
     print("\nWhat would you like to do?")
     print("1 - Feed")
@@ -54,7 +64,10 @@ for turn in range(5):
     elif choice == "2":
         happiness = min(10, happiness + 2)
         hunger = min(10, hunger + 1)  # playing makes it hungry
-        print(f"You played with {name}. Happiness is now {happiness}, but hunger is now {hunger}.")
+        print(f"You played with {name}. Happiness is now {happiness} 😜, but hunger is now {hunger} 🤤")
+        if random.random() < 0.7:
+            found_object = random.choice(possible_finds)
+            print(f"While playing, {name} dug up {found_object} 🎉!")
     elif choice == "3":
         hunger = min(10, hunger + 2)
         happiness = max(0, happiness - 2)
@@ -64,6 +77,9 @@ for turn in range(5):
 
 # End of game
 print("\n🧾 Game Over!")
+end_time = time.time()
+elapsed_time = round(end_time - start_time, 2)
+print(f"You kept your pet alive for {elapsed_time} seconds.")
 if hunger >= 10:
     print(f"{name} was too hungry and ran away in search of snacks. 🍟")
 elif happiness <= 0:
